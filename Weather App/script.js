@@ -9,7 +9,7 @@
 //   });
 
 let weather = {
-  apiKey: "632edcf412eac977daeabfd19d180074",
+  apiKey: "YOUR API KEY",
 
   fetchWeather: function (city) {
     fetch(
