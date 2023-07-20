@@ -131,6 +131,8 @@ h1.temp {
   display: block;
   max-height: 20px;
   position: relative;
+    visibility: hidden;
+
 }
 
 .weather.loading:after {
