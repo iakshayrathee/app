@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="search"
+          class="search-bar"
+          placeholder="search by city name"
+        />
+        <button>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            height="1.5em"
+            width="1.5em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="location-not-found" id="notFound">
+        <img src="images/location" alt="" />
+        <h1>OOPS! Location Not Found</h1>
+      </div>
+
+      <div class="weather loading">
+        <img src="./images/clouds.png" alt="" class="weather-icon icon" />
+        <h1 class="temp">51°C</h1>
+        <h2 class="city">Weather in Denver</h2>
+        <div class="description">Cloudy</div>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" alt="" class="humidity-img" />
+            <div class="humidity">
+              Humidity <br />
+              60%
+            </div>
+
+            <img src="images/wind.png" alt="" class="wind-img" />
+            <div class="wind">
+              Wind speed <br />
+              6.2 km/h
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      Made with 💙 by
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/
+iakshayrathee"
+      >
+        Akshay Rathee
+      </a>
+    </footer>
+  </body>
+</html>
