@@ -22,20 +22,21 @@ let weather = {
       .then((data) => this.displayWeather(data));
   },
   displayWeather: function (data) {
-    const { name } = data;
-    const { icon, description } = data.weather[0];
-    const { temp, humidity } = data.main;
-    const { speed } = data.wind;
-
+    
     //location not found
     const locationNot = document.querySelector(".location-not-found");
     const weather_body = document.querySelector(".weather");
-    const { error } = data.cod;
+    const error  = data.cod;
     if (error === "404") {
       locationNot.style.display = "block";
       weather_body.style.display = "none";
       return;
     }
+
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, humidity } = data.main;
+    const { speed } = data.wind;
 
     const image = document.querySelector(".icon");
     document.querySelector(".city").innerText = "Weather in " + name;
